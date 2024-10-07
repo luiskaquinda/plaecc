@@ -13,6 +13,8 @@
   --blue-btn-2: #9c9c9c;
   --health-id: #08cc6a;
   --tech-id: #00c3ff;
+  --whatsapp: #22d566;
+  --whatsapp-sticky: #11612f;
 }
 
 /*======================================
@@ -1044,8 +1046,8 @@ ol {
 }
 
 .section {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 28px;
+  padding-bottom: 64px;
   position: relative;
 }
 
@@ -1065,11 +1067,15 @@ ol {
 
 /* Section Title */
 .section-title {
-  text-align: center;
+  text-align: justify;
   margin-bottom: 80px;
   padding: 0 300px;
   position: relative;
   z-index: 5;
+}
+
+.section-title h2.plaecc-description {
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1214,6 +1220,89 @@ ol {
   margin-left: 0;
 }
 
+/* My style */
+
+#nav .nav-item .my-nav-link, 
+.navbar .register-button .my-nav-link, 
+.navbar .auth-button .my-nav-link {
+  font-size: 18px !important;
+}
+
+.hero-content a.hero-button-link {
+  background-color: var(--yellow-100);
+  color: #fff;
+  padding: 12px 18px;
+  font-size: 18px;
+  font-weight: 500;
+
+  border-radius: 8px;
+  -webkit-transition: all .3s ease-out 0s;
+  transition: all .3s ease-out 0s;
+}
+
+.hero-content a.hero-button-link i {
+  padding: 4px;
+  margin-left: 12px;
+  font-weight: 600;
+}
+
+.hero-content a.hero-button-link:hover {
+  -webkit-box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
+  box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
+  -webkit-transform: translate3d(0, -5px, 0);
+  transform: translate3d(0, -5px, 0);
+}
+
+.hero-content a.hero-button-link:hover {
+  cursor: pointer;
+  background-color: var(--yellow);
+}
+
+ul li.nav-item .support:hover {
+  color: var(--whatsapp) !important;
+  transition: ease 1s !important;
+}
+
+.sticky .navbar .navbar-nav .nav-item a.support:hover {
+  color: var(--whatsapp-sticky) !important;
+  transition: ease 1s !important;
+}
+
+/* One Click Scrool Top Button*/
+.support-link {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background: var(--whatsapp);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  color: #fff !important;
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-out 0s;
+  transition: all .3s ease-out 0s;
+  border-radius: 5px;
+}
+
+.support-link:hover {
+  -webkit-box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
+  box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
+  -webkit-transform: translate3d(0, -5px, 0);
+  transform: translate3d(0, -5px, 0);
+  background-color: var(--black);
+}
+
 /* One Click Scrool Top Button*/
 .scroll-top {
   width: 45px;
@@ -1232,7 +1321,7 @@ ol {
   font-size: 14px;
   color: #fff !important;
   position: fixed;
-  bottom: 30px;
+  bottom: 20px;
   right: 30px;
   z-index: 9;
   cursor: pointer;
@@ -1344,7 +1433,7 @@ ol {
 
 .button .btn {
   display: inline-block;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   font-size: 15px;
   font-weight: 500;
   padding: 15px 30px;
@@ -2190,7 +2279,7 @@ ol {
   line-height: 55px;
   color: #fff;
   margin: 0px 0 18px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   overflow: hidden;
 }
 
@@ -2488,6 +2577,33 @@ ol {
   z-index: 2;
 }
 
+.single-featuer p span {
+  display: inline;
+}
+
+.single-featuer .custom-buttom a.custom-buttom-link {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 15px 30px;
+  background-color: var(--black);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+  margin-right: 7px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 4px 7px #00000021;
+  box-shadow: 0px 4px 7px #00000021;
+}
+
+
+.single-featuer .custom-buttom a.custom-buttom-link:hover {
+  transition: a .3s ease;
+  background-color: var(--yellow) !important;
+}
+
 .single-featuer .shape {
   position: absolute;
   left: -30px;
@@ -2532,8 +2648,8 @@ ol {
 }
 
 .single-featuer .service-icon {
-  height: 65px;
-  width: 65px;
+  height: 200px;
+  width: 212px;
   line-height: 65px;
   border-radius: 8px;
   color: #fff;
@@ -2544,7 +2660,7 @@ ol {
   font-size: 30px;
   -webkit-box-shadow: 0px 10px 30px rgba(48, 128, 227, 0.18);
           box-shadow: 0px 10px 30px rgba(48, 128, 227, 0.18);
-  background-image: url("../images/count-down/bg.png");
+  background-image: url("../images/count-down/plaecc.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2552,8 +2668,6 @@ ol {
 
 .single-featuer:hover .service-icon {
   background-color: var(--yellow);
-  -webkit-box-shadow: 0px 10px 30px var(--yellow-100);
-          box-shadow: 0px 10px 30px var(--yellow-100);
 }
 
 .single-featuer h3 {
@@ -2565,6 +2679,7 @@ ol {
 
 .single-featuer p {
   font-size: 16px;
+  font-weight: 600;
 }
 
 .single-featuer a {
@@ -2883,21 +2998,25 @@ ol {
 
 .call-action.style2 .text h5 {
   border: none;
-  background-color: var(--red-100);
+  /* background-color: var(--red-100); */
   padding: 8px;
   margin-bottom: 10px;
 }
 
-.call-action.style2 .text h5.event-category-education {
-  background-color: var(--black);
+.call-action.style2 .text h5 i {
+  font-size: 52px;
 }
 
-.call-action.style2 .text h5.event-category-tech {
-  background-color: var(--tech-id);
+.call-action.style2 .text h5.event-category-education i {
+  color: var(--black);
 }
 
-.call-action.style2 .text h5.event-category-helth {
-  background-color: var(--health-id);
+.call-action.style2 .text h5.event-category-tech i {
+  color: var(--tech-id);
+}
+
+.call-action.style2 .text h5.event-category-helth i {
+  color: var(--health-id);
 }
 
 .call-action.style2 .text h2 {
