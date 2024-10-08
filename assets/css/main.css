@@ -1228,7 +1228,15 @@ ol {
   font-size: 18px !important;
 }
 
-.hero-content a.hero-button-link {
+.hero-content a.hero-button-link, 
+.see-more-container .button a.hero-button-link
+{
+  -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.048);
+          box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.048);
+  
+  -webkit-box-shadow: 0px 4px 7px #00000021;
+  box-shadow: 0px 4px 7px #00000021;
+
   background-color: var(--yellow-100);
   color: #fff;
   padding: 12px 18px;
@@ -1238,15 +1246,18 @@ ol {
   border-radius: 8px;
   -webkit-transition: all .3s ease-out 0s;
   transition: all .3s ease-out 0s;
-}
 
+  margin-top: 32px;
+}
 .hero-content a.hero-button-link i {
   padding: 4px;
   margin-left: 12px;
   font-weight: 600;
 }
 
-.hero-content a.hero-button-link:hover {
+.hero-content a.hero-button-link:hover,
+.see-more-container .button a.hero-button-link:hover
+{
   -webkit-box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
   box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
   -webkit-transform: translate3d(0, -5px, 0);
@@ -3416,4 +3427,84 @@ ul li.nav-item .support:hover {
 .subscribe-btn button:hover {
   background-color: var(--black) !important;
   cursor: pointer;
+}
+
+/* Partner Style */
+
+.partners-container {
+  padding-top: 150px;
+}
+
+h2.partners-title {
+  text-align: center;
+  padding: 20px;
+}
+
+.slick-slide{
+  margin: 0 20px;
+}
+.slick-slide img {
+  width: 100%;
+}
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+.slick-list{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-track{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block
+}
+.slick-slide{
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+.slick-slide img{
+  display: block;
+}
+.slick-initialized .slick-slide{
+  display: block;
+}
+.copy{
+  padding-top: 250px;
+}
+
+.partners-container .customer-events .slide .button a {
+  width: auto;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.partners-container .customer-events .slide .custom-card {
+  width: 240px;
+}
+
+.partners-container .customer-events .slide .custom-card .custom-card-content,
+.partners-container .customer-events .slide .custom-card .custom-card-button 
+{
+  margin-bottom: 8px;
+}
+
+.partners-container .customer-events .slide .custom-card .custom-card-content-title p {
+  margin: 12px 0;
+}
+
+.partners-container .customer-events .slide .custom-card .custom-card-content-title .icon i {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.partners-container .customer-events .slide .button a i {
+  margin-left: 4px;
 }
