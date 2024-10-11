@@ -3432,7 +3432,7 @@ ul li.nav-item .support:hover {
 /* Partner Style */
 
 .partners-container {
-  padding-top: 20px;
+  padding-top: 28px;
 }
 
 h2.partners-title {
@@ -3443,6 +3443,12 @@ h2.partners-title {
 .slick-slide{
   margin: 0 20px;
 }
+
+.slide-partners {
+  margin: 0 20px;
+  width: 142px !important;
+}
+
 .slick-slide img {
   width: 100%;
 }
@@ -3512,4 +3518,25 @@ h2.partners-title {
 
 .partners-container .customer-events .slide .button a i {
   margin-left: 4px;
+}
+
+@media screen and (max-width: 680px) {
+  .count-down .box-content {
+    text-align: center;
+    background-color: var(--yellow-100);
+    background-image: url("../images/count-down/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 60px 50px;
+    z-index: 2;
+    border-radius: 10px;
+    overflow: hidden;
+  }
 }
