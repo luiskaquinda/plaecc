@@ -2586,6 +2586,11 @@ ul li.nav-item .support:hover {
   transition: all 0.4s ease;
   overflow: hidden;
   z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .single-featuer p span {
@@ -2607,6 +2612,9 @@ ul li.nav-item .support:hover {
   overflow: hidden;
   -webkit-box-shadow: 0px 4px 7px #00000021;
   box-shadow: 0px 4px 7px #00000021;
+
+  width: 100%;
+  text-align: center;
 }
 
 
@@ -2699,6 +2707,7 @@ ul li.nav-item .support:hover {
   display: inline-block;
   font-weight: 500;
   font-size: 15px;
+  /* width: 100%; */
 }
 
 .single-featuer a i {
@@ -3539,4 +3548,14 @@ h2.partners-title {
     border-radius: 10px;
     overflow: hidden;
   }
+}
+
+section .my-partners-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section .image-container {
+  width: 80px !important;
 }
