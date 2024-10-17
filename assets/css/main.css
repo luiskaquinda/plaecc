@@ -1,4 +1,4 @@
-/*======================================
+//*======================================
     Variables
 ========================================*/
 
@@ -3512,10 +3512,10 @@ h2.partners-title {
 }
 
 .partners-container .customer-events .slide .custom-card .custom-card-content-title .icon {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  column-gap: 2px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: start !important;
+  column-gap: 2px !important;
 }
 
 .partners-container .customer-events .slide .custom-card .custom-card-content-title p {
