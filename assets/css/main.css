@@ -1,4 +1,4 @@
-//*======================================
+/*======================================
     Variables
 ========================================*/
 
@@ -3503,6 +3503,11 @@ h2.partners-title {
 
 .partners-container .customer-events .slide .custom-card {
   width: 240px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  column-gap: 12px;
 }
 
 .partners-container .customer-events .slide .custom-card .custom-card-content,
