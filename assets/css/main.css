@@ -3511,6 +3511,13 @@ h2.partners-title {
   margin-bottom: 8px;
 }
 
+.partners-container .customer-events .slide .custom-card .custom-card-content-title .icon {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  column-gap: 2px;
+}
+
 .partners-container .customer-events .slide .custom-card .custom-card-content-title p {
   margin: 12px 0;
 }
@@ -3518,6 +3525,11 @@ h2.partners-title {
 .partners-container .customer-events .slide .custom-card .custom-card-content-title .icon i {
   font-size: 32px;
   font-weight: 600;
+}
+
+.partners-container .customer-events .slide .custom-card .custom-card-content-title .icon span svg {
+  width: 40px !important;
+  height: 40px !important;
 }
 
 .partners-container .customer-events .slide .custom-card .custom-card-content-title h2 {
